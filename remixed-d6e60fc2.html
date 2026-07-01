@@ -81,7 +81,7 @@
     body::before {
       content: '';
       position: fixed; inset: 0; z-index: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E");
       pointer-events: none; opacity: 0.4;
     }
 
@@ -746,7 +746,7 @@
           <p class="section-label">About Me</p>
           <h2 class="section-title">Turning Ideas into <span class="grad-text">Revenue</span></h2>
           <p class="section-sub">
-            I'm a passionate Shopify Developer and Ecommerce Specialist with a deep focus on building stores that don't just look great — they convert. From zero to launch, I handle everything so you can focus on growing your business.
+            I'm a passionate Shopify Developer and Ecommerce Specialist with a deep focus on building stores that don't just look great — they convert. From zero to launch, I handle everything so your store performs flawlessly from day one.
           </p>
           <p class="section-sub" style="margin-top:12px;">
             My mission is simple: help entrepreneurs and brands scale their online presence with strategically designed, performance-optimized Shopify stores.
@@ -1010,64 +1010,49 @@
       <div class="container">
         <div class="fade-up">
           <p class="section-label">Get In Touch</p>
-          <h2 class="section-title">Let's Build Something <span class="grad-text">Great</span></h2>
-          <p class="section-sub">Ready to scale your store? I'd love to hear about your project. Reach out and let's talk.</p>
+          <h2 class="section-title">Let's <span class="grad-text">Work Together</span></h2>
+          <p class="section-sub">Have a project in mind? Let's talk about how I can help scale your ecommerce business.</p>
         </div>
-        <div class="contact-inner" style="margin-top:60px;">
-          <div class="fade-up">
-            <h3 style="font-size:20px; font-weight:700; margin-bottom:8px;">Contact Info</h3>
-            <p style="color:var(--text2); font-size:14px; margin-bottom:0;">Choose your preferred way to reach me.</p>
-            <div class="contact-info">
-              <a href="mailto:biplob@scalewithbiplob.com" class="contact-link">
-                <div class="contact-link-icon">✉️</div>
-                <div>
-                  <div class="contact-link-text">Email</div>
-                  <div class="contact-link-sub">biplob@scalewithbiplob.com</div>
-                </div>
-              </a>
-              <a href="https://linkedin.com/in/scalewithbiplob" target="_blank" rel="noopener" class="contact-link">
-                <div class="contact-link-icon">💼</div>
-                <div>
-                  <div class="contact-link-text">LinkedIn</div>
-                  <div class="contact-link-sub">linkedin.com/in/scalewithbiplob</div>
-                </div>
-              </a>
-              <a href="https://github.com/scalewithbiplob" target="_blank" rel="noopener" class="contact-link">
-                <div class="contact-link-icon">🐙</div>
-                <div>
-                  <div class="contact-link-text">GitHub</div>
-                  <div class="contact-link-sub">github.com/scalewithbiplob</div>
-                </div>
-              </a>
+        <div class="contact-inner fade-up">
+          <div class="contact-info">
+            <div class="contact-link">
+              <div class="contact-link-icon">📧</div>
+              <div>
+                <div class="contact-link-text">Email</div>
+                <div class="contact-link-sub">contact@scalewithbiplob.com</div>
+              </div>
+            </div>
+            <div class="contact-link">
+              <div class="contact-link-icon">💬</div>
+              <div>
+                <div class="contact-link-text">WhatsApp</div>
+                <div class="contact-link-sub">+1 (555) 123-4567</div>
+              </div>
+            </div>
+            <div class="contact-link">
+              <div class="contact-link-icon">🔗</div>
+              <div>
+                <div class="contact-link-text">LinkedIn</div>
+                <div class="contact-link-sub">linkedin.com/in/biplob</div>
+              </div>
             </div>
           </div>
-          <div class="fade-up">
-            <h3 style="font-size:20px; font-weight:700; margin-bottom:20px;">Send a Message</h3>
-            <div class="contact-form" id="contactForm">
-              <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" placeholder="John Doe" required />
-              </div>
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="john@example.com" required />
-              </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" placeholder="Shopify Store Setup" />
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-              </div>
-              <div class="form-success" id="formSuccess">
-                ✅ Message sent! I'll get back to you within 24 hours.
-              </div>
-              <button type="button" class="btn btn-primary" id="submitBtn" style="width:100%; justify-content:center;">
-                Send Message →
-              </button>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
             </div>
-          </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Tell me about your project</label>
+              <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div class="form-success" id="formSuccess">✓ Message sent successfully! I'll get back to you soon.</div>
+          </form>
         </div>
       </div>
     </section>
@@ -1078,124 +1063,159 @@
        FOOTER
   ============================================================ -->
   <footer>
-    <div class="container footer-inner">
-      <div class="footer-logo">Scale<span>With</span>Biplob</div>
-      <p class="footer-copy">© 2025 Biplob Hasan · ScaleWithBiplob · All rights reserved.</p>
-      <div class="footer-socials">
-        <a href="https://linkedin.com/in/scalewithbiplob" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">💼</a>
-        <a href="https://github.com/scalewithbiplob" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">🐙</a>
-        <a href="mailto:biplob@scalewithbiplob.com" class="social-btn" aria-label="Email">✉️</a>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">Scale<span>With</span>Biplob</div>
+        <div class="footer-copy">© 2024 Biplob Hasan. All rights reserved.</div>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" title="Twitter">𝕏</a>
+          <a href="#" class="social-btn" title="LinkedIn">in</a>
+          <a href="#" class="social-btn" title="GitHub">⚙️</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <!-- ============================================================
-       JS
-  ============================================================ -->
   <script>
-    /* ---- THEME ---- */
+    // ============================================================
+    // THEME TOGGLE
+    // ============================================================
+    const themeToggle = document.getElementById('themeToggle');
     const html = document.documentElement;
-    const themeBtn = document.getElementById('themeToggle');
-    const saved = localStorage.getItem('swb-theme') || 'dark';
-    html.setAttribute('data-theme', saved);
-    themeBtn.textContent = saved === 'dark' ? '🌙' : '☀️';
-    themeBtn.addEventListener('click', () => {
-      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+
+    html.setAttribute('data-theme', savedTheme);
+    themeToggle.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+
+    themeToggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
       html.setAttribute('data-theme', next);
-      themeBtn.textContent = next === 'dark' ? '🌙' : '☀️';
-      localStorage.setItem('swb-theme', next);
+      localStorage.setItem('theme', next);
+      themeToggle.textContent = next === 'dark' ? '☀️' : '🌙';
     });
 
-    /* ---- NAVBAR SCROLL ---- */
+    // ============================================================
+    // NAVBAR SCROLL EFFECT
+    // ============================================================
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 40);
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    /* ---- MOBILE NAV ---- */
+    // ============================================================
+    // MOBILE MENU
+    // ============================================================
     const hamburger = document.getElementById('hamburger');
     const mobileNav = document.getElementById('mobileNav');
     const mobileClose = document.getElementById('mobileClose');
+    const mobileLinks = mobileNav.querySelectorAll('a');
+
     hamburger.addEventListener('click', () => {
       mobileNav.classList.add('open');
       hamburger.setAttribute('aria-expanded', 'true');
     });
+
     mobileClose.addEventListener('click', () => {
       mobileNav.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
     });
-    document.querySelectorAll('.mobile-link').forEach(l => {
-      l.addEventListener('click', () => {
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
         mobileNav.classList.remove('open');
         hamburger.setAttribute('aria-expanded', 'false');
       });
     });
 
-    /* ---- INTERSECTION OBSERVER (fade-up + skill bars) ---- */
+    // ============================================================
+    // FADE UP ANIMATION ON SCROLL
+    // ============================================================
+    const fadeUpElements = document.querySelectorAll('.fade-up');
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          if (e.target.id === 'skillsGrid') animateSkills();
-          observer.unobserve(e.target);
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
         }
       });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.fade-up, #skillsGrid').forEach(el => observer.observe(el));
+    }, { threshold: 0.1 });
 
-    /* ---- SKILLS ---- */
-    const skills = [
+    fadeUpElements.forEach(el => observer.observe(el));
+
+    // ============================================================
+    // SKILLS GRID RENDERING
+    // ============================================================
+    const skillsData = [
       { name: 'Shopify', pct: 95 },
-      { name: 'Shopify Liquid', pct: 90 },
-      { name: 'HTML', pct: 92 },
-      { name: 'CSS', pct: 88 },
-      { name: 'JavaScript', pct: 78 },
-      { name: 'Responsive Design', pct: 92 },
-      { name: 'SEO Basics', pct: 80 },
-      { name: 'Product Research', pct: 87 },
-      { name: 'Ecommerce Strategy', pct: 85 },
-      { name: 'Customer Support', pct: 90 },
+      { name: 'Liquid', pct: 90 },
+      { name: 'JavaScript', pct: 85 },
+      { name: 'HTML/CSS', pct: 95 },
+      { name: 'SEO', pct: 88 },
+      { name: 'CRO', pct: 92 },
+      { name: 'UX Design', pct: 87 },
+      { name: 'Product Photography', pct: 85 },
     ];
-    const grid = document.getElementById('skillsGrid');
-    skills.forEach(s => {
-      grid.innerHTML += `
-        <div class="skill-item">
-          <div class="skill-top">
-            <span class="skill-name">${s.name}</span>
-            <span class="skill-pct">${s.pct}%</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-fill" data-pct="${s.pct}"></div>
-          </div>
-        </div>`;
+
+    const skillsGrid = document.getElementById('skillsGrid');
+    skillsData.forEach(skill => {
+      const skillItem = document.createElement('div');
+      skillItem.className = 'skill-item fade-up';
+      skillItem.innerHTML = `
+        <div class="skill-top">
+          <span class="skill-name">${skill.name}</span>
+          <span class="skill-pct">${skill.pct}%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" style="width: 0;"></div>
+        </div>
+      `;
+      skillsGrid.appendChild(skillItem);
+
+      // Trigger animation
+      observer.observe(skillItem);
+      skillItem.addEventListener('animationstart', () => {
+        const fill = skillItem.querySelector('.skill-fill');
+        setTimeout(() => {
+          fill.style.width = `${skill.pct}%`;
+        }, 100);
+      });
+
+      if (skillItem.classList.contains('visible')) {
+        const fill = skillItem.querySelector('.skill-fill');
+        fill.style.width = `${skill.pct}%`;
+      }
     });
-    function animateSkills() {
-      document.querySelectorAll('.skill-fill').forEach(bar => {
-        setTimeout(() => { bar.style.width = bar.dataset.pct + '%'; }, 100);
+
+    // Update skill bars on intersection
+    const skillItems = document.querySelectorAll('.skill-item');
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const fill = entry.target.querySelector('.skill-fill');
+          const pct = parseFloat(entry.target.querySelector('.skill-pct').textContent);
+          fill.style.width = `${pct}%`;
+        }
+      });
+    }, { threshold: 0.1 });
+
+    skillItems.forEach(item => skillObserver.observe(item));
+
+    // ============================================================
+    // CONTACT FORM
+    // ============================================================
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // Simulate form submission
+        document.getElementById('formSuccess').style.display = 'block';
+        contactForm.reset();
+        setTimeout(() => {
+          document.getElementById('formSuccess').style.display = 'none';
+        }, 5000);
       });
     }
-
-    /* ---- CONTACT FORM ---- */
-    document.getElementById('submitBtn').addEventListener('click', () => {
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const msg = document.getElementById('message').value.trim();
-      if (!name || !email || !msg) {
-        alert('Please fill in all required fields.');
-        return;
-      }
-      document.getElementById('formSuccess').style.display = 'block';
-      document.getElementById('submitBtn').textContent = '✓ Sent!';
-      document.getElementById('submitBtn').disabled = true;
-    });
-
-    /* ---- STAGGER FADE DELAYS ---- */
-    document.querySelectorAll('.services-grid .service-card,\
-      .skills-grid .skill-item,\
-      .portfolio-grid .portfolio-card,\
-      .why-grid .why-card').forEach((el, i) => {
-      el.style.transitionDelay = `${(i % 4) * 80}ms`;
-    });
   </script>
 </body>
 </html>
